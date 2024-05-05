@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EK-BAAR</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+        }
+        
+        h1 {
+            margin: 0;
+        }
+        
+        #movie-info {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+        
+        .movie-image img {
+            max-width: 200px;
+            height: auto;
+            margin-right: 20px;
+        }
+        
+        #video-section {
+            text-align: center;
+            padding: 20px;
+        }
+        
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        
+        /* Add more styles as needed */
+        
+    </style>
+</head>
+<body>
+    <script>
+        // Disable right-click menu
+        window.addEventListener('contextmenu', function (e) {
+          e.preventDefault();
+        });
+    
+        // Disable text selection
+        document.addEventListener('selectstart', function (e) {
+          e.preventDefault();
+        });
+    
+        // Disable screen recording and screenshots
+        window.addEventListener('keydown', function (e) {
+          if (e.key === 'PrintScreen' || (e.key === 'Shift' && e.key === 'Cmd' && e.key === '4')) {
+            e.preventDefault();
+          }
+        });
+      </script>
+    <header>
+        <h1>EK-BAAR</h1>
+    </header>
+    <section id="movie-info">
+        <div class="movie-image">
+            <img src="2ndlookugadi-011.jpg" alt="Movie Image">
+        </div>
+        <div class="movie-details">
+            <h2>FILM TITLE: EK - BAAR</h2>
+            <p><strong>DIRECTED BY:</strong> S SHIVA SHANKAR</p>
+            <p><strong>PRODUCTION:</strong> Rudramadevi Pictures</p>
+            <p><strong>MAIN LEADS:</strong> Akshay, Aadhya Reddy
+            </p>
+            
+        </div>
+    </section>
+    <section id="video-section">
+        <h2>Watch Trailer</h2>
+        <div class="video-container">
+            <iframe
+              width="460"
+              height="255"
+              src="https://drive.google.com/file/d/1dzgLJA0HKfaHE0PFlKVM8a4oWSc100Ip/preview"
+              frameborder="0"
+              allowfullscreen
+            ></iframe>
+          </div>
+    </section>
+
+    <section id="movie-info">
+        <div class="movie-image">
+            <img src="firstloook.jpg" alt="Movie Image">
+        </div>
+        <div class="movie-details">
+            
+            
+            </p>
+            <p><strong>PRODUCERS :</strong> Shiva Shankar, Srikanth
+            </p>
+            <p><strong>STORY, SCREENPLAY, DIALOGUES :</strong> Shiva Shankar
+            </p>
+            <p><strong>Editors :</strong> Shiva Shankar,Preetham
+            </p>
+            <p><strong>DUBBING :</strong> Moon Light Creations, Rithik
+            </p>
+            <p><strong>MUSIC :</strong> Sai Das, Vicky
+            </p>
+            <p><strong>POSTER/PUBLICITY :</strong> Preetham, Shiva Shankar
+            </p>
+            <br>
+        </div>
+    </section>
+    <br><br>
+    <footer>
+        <p>&copy; 2024 EK-BAAR</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
