@@ -51,7 +51,7 @@
             width: 100%;
         }
         
-        /* Add more styles as needed */
+         
         #d {
             background-color: #2103030d;
             height: 200px;
@@ -65,17 +65,17 @@
 </head>
 <body>
     <script>
-        // Disable right-click menu
+         
         window.addEventListener('contextmenu', function (e) {
           e.preventDefault();
         });
     
-        // Disable text selection
+       
         document.addEventListener('selectstart', function (e) {
           e.preventDefault();
         });
     
-        // Disable screen recording and screenshots
+         
         window.addEventListener('keydown', function (e) {
           if (e.key === 'PrintScreen' || (e.key === 'Shift' && e.key === 'Cmd' && e.key === '4')) {
             e.preventDefault();
