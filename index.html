@@ -6,66 +6,41 @@
     <title>EK-BAAR</title>
     <link rel="stylesheet" href="styles.css">
     <style>
-        /* Resetting default browser styles */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        /* Setting up body styles */
         body {
             font-family: Arial, sans-serif;
-            background-color: #f5f5f5;
-            color: #333;
-            line-height: 1.6;
+            margin: 0;
+            padding: 0;
         }
-
-        /* Header styles */
+        
         header {
             background-color: #333;
             color: #fff;
             text-align: center;
             padding: 20px 0;
         }
-
-        /* Heading styles */
-        h1, h2 {
+        
+        h1 {
             margin: 0;
-            font-weight: normal;
         }
-
-        /* Movie info section styles */
+        
         #movie-info {
             display: flex;
             justify-content: center;
             align-items: center;
             padding: 20px;
-            background-color: #fff;
-            border-bottom: 1px solid #ddd;
         }
-
-        /* Movie image styles */
+        
         .movie-image img {
             max-width: 200px;
             height: auto;
             margin-right: 20px;
-            border-radius: 5px;
         }
-
-        /* Movie details styles */
-        .movie-details {
-            flex: 1;
-        }
-
-        /* Video section styles */
+        
         #video-section {
             text-align: center;
             padding: 20px;
-            background-color: #fff;
         }
-
-        /* Footer styles */
+        
         footer {
             background-color: #333;
             color: #fff;
@@ -75,9 +50,30 @@
             bottom: 0;
             width: 100%;
         }
+        
+        /* Add more styles as needed */
+        
     </style>
 </head>
 <body>
+    <script>
+        // Disable right-click menu
+        window.addEventListener('contextmenu', function (e) {
+          e.preventDefault();
+        });
+    
+        // Disable text selection
+        document.addEventListener('selectstart', function (e) {
+          e.preventDefault();
+        });
+    
+        // Disable screen recording and screenshots
+        window.addEventListener('keydown', function (e) {
+          if (e.key === 'PrintScreen' || (e.key === 'Shift' && e.key === 'Cmd' && e.key === '4')) {
+            e.preventDefault();
+          }
+        });
+      </script>
     <header>
         <h1>EK-BAAR</h1>
     </header>
@@ -89,7 +85,9 @@
             <h2>FILM TITLE: EK - BAAR</h2>
             <p><strong>DIRECTED BY:</strong> S SHIVA SHANKAR</p>
             <p><strong>PRODUCTION:</strong> Rudramadevi Pictures</p>
-            <p><strong>MAIN LEADS:</strong> Akshay, Aadhya Reddy</p>
+            <p><strong>MAIN LEADS:</strong> Akshay, Aadhya Reddy
+            </p>
+            
         </div>
     </section>
     <section id="video-section">
@@ -102,20 +100,30 @@
               frameborder="0"
               allowfullscreen
             ></iframe>
-        </div>
+          </div>
     </section>
+
     <section id="movie-info">
         <div class="movie-image">
             <img src="firstloook.jpg" alt="Movie Image">
         </div>
         <div class="movie-details">
-            <h2>Additional Information</h2>
-            <p><strong>PRODUCERS :</strong> Shiva Shankar, Srikanth</p>
-            <p><strong>STORY, SCREENPLAY, DIALOGUES :</strong> Shiva Shankar</p>
-            <p><strong>Editors :</strong> Shiva Shankar,Preetham</p>
-            <p><strong>DUBBING :</strong> Moon Light Creations, Rithik</p>
-            <p><strong>MUSIC :</strong> Sai Das, Vicky</p>
-            <p><strong>POSTER/PUBLICITY :</strong> Preetham, Shiva Shankar</p>
+            
+            
+            </p>
+            <p><strong>PRODUCERS :</strong> Shiva Shankar, Srikanth
+            </p>
+            <p><strong>STORY, SCREENPLAY, DIALOGUES :</strong> Shiva Shankar
+            </p>
+            <p><strong>Editors :</strong> Shiva Shankar,Preetham
+            </p>
+            <p><strong>DUBBING :</strong> Moon Light Creations, Rithik
+            </p>
+            <p><strong>MUSIC :</strong> Sai Das, Vicky
+            </p>
+            <p><strong>POSTER/PUBLICITY :</strong> Preetham, Shiva Shankar
+            </p>
+            <br>
         </div>
     </section>
     <br><br>
